@@ -1,35 +1,38 @@
 #include<iostream>
-#include<algorithm>
 #include<vector>
 using namespace std;
 
-void solve(int *a,int i,int n,int tar,ans,int sum = 0){
-	// base case
-	if(sum==tar){
+void solve(vector<int>& a,int i,int tar,vector<int>& ans){
+	if(i==a.size()){
+		int sum=0;
 		for(int j=0;j<ans.size();j++){
-			cout<<ans[j]<<" ";
+			sum+=ans[j];
 		}
-		cout<<endl;
+		if(sum==tar){
+			sort(ans.begin(),ans.end());
+			for(int j=0;j<ans.size();j++){
+				cout<<ans[j]<<" ";
+			}
+			cout<<endl;
+		}
 		return;
 	}
-	if(i==n){
-		return;
-	}
-	solve(a,i+1,n,tar,ans,sum);
 	ans.push_back(a[i]);
-	solve(a,i+1,n,tar,ans,sum+a[i]);
+	solve(a,i+1,tar,ans);
+	ans.pop_back();
+	solve(a,i+1,tar,ans);
 }
 
 int main(){
 	int n;
 	cin>>n;
-	int *a = new int[n];
+	vector<int> a(n);
 	for(int i=0;i<n;i++){
 		cin>>a[i];
 	}
 	int tar;
 	cin>>tar;
-	int n = sizeof(a)/sizeof(int);
 	vector<int> ans;
-	solve(a,0,n,tar);)
+	solve(a,0,tar,ans);
+	return 0;
 }
