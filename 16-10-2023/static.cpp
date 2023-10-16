@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 class Student{
@@ -17,6 +18,10 @@ public:
 	char * get_name(){
 		return name;
 	}
+	static void print(){
+		cout << ct <<endl;
+		cout<< "static method is called";
+	}
 };
 
 int Student::ct;
@@ -29,5 +34,6 @@ int main(){
 	cout<< s1.get_name() <<endl;
 	cout<< s1.get_roll_no() <<endl;
 	cout<< Student::ct <<endl;
+	Student::print();
 	return 0;
 }
