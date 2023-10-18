@@ -7,16 +7,14 @@ void gen(string s,int n,int open,int close){
 		return;
 	}
 	if(close<open){
-		s.push_back(')');
-		gen(s,n,open,close+1);
+		gen(s+')',n,open,close+1);
 	}
 	if(open<n){
-		s.push_back('(');
-		gen(s,n,open+1,close);
+		gen(s+'(',n,open+1,close);
 	}
 }
 
 int main(){
-	
+	gen("",3,0,0);
 	return 0;
 }
