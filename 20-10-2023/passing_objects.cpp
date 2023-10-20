@@ -12,7 +12,7 @@ public:
 	}
 };
 
-void change1(Employee e){
+void change1(Employee e){ 
 	e.id = 100;
 }
 
