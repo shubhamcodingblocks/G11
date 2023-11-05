@@ -1,0 +1,56 @@
+Q.1>
+Reverse an array k times.
+
+
+Q.2>
+multiply 2 matrices
+
+
+
+Q.3>
+There are n stairs, a person standing at the bottom wants to climb stairs to reach the nth stair. The person can climb atmost m stairs at a time, the task is to count the number of ways that a person can reach at the top.
+code: https://github.com/shubhamcodingblocks/G9/blob/main/26-09-2023/stairs.cpp
+
+similar problem: There are n stairs, a person standing at the bottom wants to climb stairs to reach the nth stair. The person can climb either 1 ,2 or 3 stairs at a time, the task is to count the number of ways that a person can reach at the top.
+
+
+Q.4>
+Take as input N, a number. Write a recursive function which prints counting from 0 to N in lexicographical order. In lexicographical (dictionary) order 10, 100 and 109 will be printed before 11.
+
+
+
+Q.5>
+Given a N*N matrix. The task is to find the index of the column with the maximum sum. That is the column whose sum of elements is maximum.
+
+
+Q.6>
+Given a 2D array of size N x N. Rotate the array 90 degrees anti-clockwise.
+4
+1 2 3 4
+5 6 7 8
+9 10 11 12
+13 14 15 16
+
+4 8 12 16 
+3 7 11 15 
+2 6 10 14 
+1 5 9 13 
+
+
+
+Q.7>
+subset problem, split array , first index , last index , all indexes, replace 0 with 5 from assignment 2
+
+
+
+Q.8>
+merge 2 sorted arrays.
+
+
+
+Q.9>
+https://www.hackerrank.com/challenges/array-splitting/copy-from/353828130 
+soln:https://github.com/shubhamcodingblocks/G10/blob/main/31-10-2023/hackerrank.cpp
+
+
+
